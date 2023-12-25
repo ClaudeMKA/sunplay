@@ -569,3 +569,75 @@ font-family: "Poppins";
     width: 100%;
     border-radius: 16px;
 }
+
+.section_team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team .grd_bloc_team{
+    margin-top: 14rem;
+    margin-bottom: 14rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10rem; /* Vous pouvez ajuster la valeur selon votre besoin */
+
+
+}
+.sous_bloc_team {
+    width: 400px;
+    margin: 20px;
+    padding: 15px;
+ background-color: rgba(255, 255, 255, 0.02);;
+    text-align: center;
+    position: relative;
+    color: white;
+    box-shadow: 0 0 10px rgba(243, 123, 91, 0.7);
+
+}
+.img_job {
+    padding-bottom: 6rem;
+
+}
+.our_team{
+    text-align: -webkit-center;
+
+}
+.our_team{
+    z-index: 1000;
+}
+
+
+.img_job img {
+    width: 90%;
+    height: auto;
+    margin-bottom: 10px;
+    position: absolute;
+    left: 50%;
+    padding: 1rem;
+    transform: translateX(-50%);
+    bottom: 70%;
+    border: 3px solid #F37B5B; /* Couleur et épaisseur de la bordure */
+    box-sizing: border-box; /* Pour inclure la bordure dans la largeur/hauteur totale de l'image */
+}
+.prenom_nom {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.poste {
+    font-style: italic;
+    color: #F37B5B;
+    margin-bottom: 10px;
+}
+
+.presentation {
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+.reseaux i {
+    color: #F37B5B;
+    font-size: 2rem;
+}
