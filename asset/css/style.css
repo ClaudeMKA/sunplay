@@ -102,7 +102,7 @@ h1 {
 }
 
 p.poppins{
-    width: 60%;
+    width: 100%;
     margin-left: 0.5rem;
 }
 .title{
@@ -128,22 +128,14 @@ p.poppins{
      align-items: center;
  }
 
-/* Ajoutez vos styles CSS ici */
-.navigation a {
-    position: relative;
-    text-decoration: none;
-}
 
-/* Ajoutez vos styles CSS ici */
-.navigation {
-    position: relative;
-}
 
 .navigation a {
     position: relative;
     text-decoration: none;
     display: inline-block;
-    margin-right: 20px; /* Marge entre les éléments de la navigation */
+    margin-right: 20px;
+    font-size: 14px;
 }
 
 .navigation a::before, .navigation a::after {
@@ -219,7 +211,7 @@ padding: 2rem;
     margin-left: 2rem;
 }
 .logo_image {
-    width: 8%;
+    width: 25%;
 }
 .grand_bloc_chiffre{
     margin-top: 2rem;
@@ -266,7 +258,7 @@ padding: 2rem;
 }
 .history{
     margin-bottom: 4rem;
-
+    text-align: -webkit-center;
 }
  .trait{
         border-top: 1px solid rgba(255, 255, 255, 0.24);
@@ -274,10 +266,7 @@ padding: 2rem;
         width: 100%;
 }
 .history .grd_bloc_history{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 4fr  ;
-    gap: 3rem;
+
 }
 .sous_bloc_history {
     /* Propriétés initiales */
@@ -569,6 +558,9 @@ font-family: "Poppins";
     width: 100%;
     border-radius: 16px;
 }
+.carriere{
+    margin-bottom: 8rem;
+}
 
 .section_team {
     display: flex;
@@ -618,8 +610,9 @@ font-family: "Poppins";
     padding: 1rem;
     transform: translateX(-50%);
     bottom: 70%;
-    border: 3px solid #F37B5B; /* Couleur et épaisseur de la bordure */
-    box-sizing: border-box; /* Pour inclure la bordure dans la largeur/hauteur totale de l'image */
+    border: 3px solid #F37B5B;
+    box-sizing: border-box;
+    background-color: black;
 }
 .prenom_nom {
     font-size: 1.2em;
@@ -641,3 +634,117 @@ font-family: "Poppins";
     color: #F37B5B;
     font-size: 2rem;
 }
+/* Contact */
+.contact{
+    margin-top: 14rem;
+    margin-bottom: 4rem;
+}
+
+.contact .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact h1 {
+    color: #ffffff;
+}
+
+.contact p {
+    color: #666;
+}
+
+.contact .social-link {
+    margin-top: 20px;
+}
+
+.contact .social-link a {
+    color: #1da1f2;
+    text-decoration: none;
+    font-size: 24px;
+}
+/*  faq */
+.accordion {
+    display: flex;
+    flex-direction: column;
+    font-family: "Sora", sans-serif;
+    max-width: 991px;
+    min-width: 320px;
+    margin: 50px auto;
+    padding: 0 50px;
+    margin-top: 14rem;
+    margin-bottom: 8rem;
+}
+.accordion h1 {
+    font-size: 32px;
+    text-align: center;
+}
+.accordion-item {
+    margin-top: 16px;
+    border: 1px solid #fcfcfc;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.02);;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+.accordion-item .accordion-item-title {
+    position: relative;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    font-size: 15px;
+    cursor: pointer;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 14px 20px;
+    box-sizing: border-box;
+    align-items: center;
+    color: white;
+    font-family: "Havelock Titling", sans-serif;
+    font-weight: bold;
+}
+.accordion-item .accordion-item-desc {
+    display: none;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    color: white;
+    border-top: 1px dashed #ddd;
+    padding: 10px 20px 20px;
+    box-sizing: border-box;
+}
+.accordion-item input[type="checkbox"] {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+.accordion-item input[type="checkbox"]:checked ~ .accordion-item-desc {
+    display: block;
+}
+.accordion-item
+input[type="checkbox"]:checked
+~ .accordion-item-title
+.icon:after {
+    content: "-";
+    font-size: 20px;
+}
+.accordion-item input[type="checkbox"] ~ .accordion-item-title .icon:after {
+    content: "+";
+    font-size: 20px;
+}
+.accordion-item:first-child {
+    margin-top: 0;
+}
+.accordion-item .icon {
+    margin-left: 14px;
+}
+
+@media screen and (max-width: 767px) {
+    .accordion {
+        padding: 0 16px;
+    }
+    .accordion h1 {
+        font-size: 22px;
+    }
+}
+
