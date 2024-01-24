@@ -16,13 +16,26 @@
   <link rel="stylesheet" href="asset/css/style.css">
 </head>
 <body>
+<div class="dropdown-menu" id="dropdownMenu">
+  <!-- Contenu du menu déroulant -->
+  <p><a href="history.html">History </a></p>
+  <p><a href="gouvernance.html">Gouvernance</a> </p>
+  <p><a href="team.html">Team</a></p>
+  <p><a href="contact.html">Contact</a></p>
+  <p><a href="job.html"> JOBS </a> </p>
+  <p class="login"> LAUNCH APP </p>
+
+  <!-- Ajoutez un élément pour la croix -->
+  <div class="close-button" id="closeButton">&times;</div>
+</div>
+
 <header>
   <nav class="nav">
     <div class="">
       <a href="index.html"><img src="asset/img/logo.png" alt="logo" class="logo_image"></a>
     </div>
-    <div class="navigation">
-      <p><a href="index.html">History </a></p>
+    <div class="navigation bloc_navigation_burger" id="mainNav">
+      <p><a href="history.html">History </a></p>
       <p><a href="gouvernance.html">Gouvernance</a> </p>
       <p><a href="team.html">Team</a></p>
       <p><a href="contact.html">Contact</a></p>
@@ -32,8 +45,13 @@
         <p class="login"> LAUNCH APP </p>
       </div>
     </div>
-  </nav>
 
+    <div class="menu_burger" id="menuBurger">
+      <i class="fas fa-bars"></i>
+    </div>
+
+
+  </nav>
 </header>
 
 <!-- Bloc  1 -->
@@ -52,56 +70,81 @@
   </div>
 </section>
 
-<div class="accordion">
-  <h1>Frequently Asked Questions</h1>
+<!-- SunPlay Network FAQ Section -->
+<div class="accordion section_scroll">
+  <h1>Frequently Asked Questions about SunPlay Network</h1>
+
   <div class="accordion-item">
     <input type="checkbox" id="accordion1">
-    <label for="accordion1" class="accordion-item-title"><span class="icon"></span>What is SEO, and why is it important for online businesses?</label>
-    <div class="accordion-item-desc">SEO, or Search Engine Optimization, is the practice of optimizing a website to improve its visibility on search engines like Google. It involves various techniques to enhance a site's ranking in search results. SEO is crucial for online businesses as it helps drive organic traffic, increases visibility, and ultimately leads to higher conversions.</div>
+    <label for="accordion1" class="accordion-item-title"><span class="icon"></span>What is SunPlay Network?</label>
+    <div class="accordion-item-desc">SunPlay Network is a decentralized cryptocurrency donation platform designed to revolutionize how donations are made by offering a transparent, secure, and efficient solution for donors and beneficiaries.</div>
   </div>
 
   <div class="accordion-item">
     <input type="checkbox" id="accordion2">
-    <label for="accordion2" class="accordion-item-title"><span class="icon"></span>How long does it take to see results from SEO efforts?</label>
-    <div class="accordion-item-desc">The timeline for seeing results from SEO can vary based on several factors, such as the competitiveness of keywords, the current state of the website, and the effectiveness of the SEO strategy. Generally, it may take several weeks to months before noticeable improvements occur. However, long-term commitment to SEO is essential for sustained success.</div>
+    <label for="accordion2" class="accordion-item-title"><span class="icon"></span>How does SunPlay Network work?</label>
+    <div class="accordion-item-desc">The platform utilizes blockchain technology to facilitate cryptocurrency donations in a decentralized manner. This allows donors to track their donations and receive updates on the impact of their contributions.</div>
   </div>
 
   <div class="accordion-item">
     <input type="checkbox" id="accordion3">
-    <label for="accordion3" class="accordion-item-title"><span class="icon"></span>What are the key components of a successful SEO strategy?</label>
-    <div class="accordion-item-desc">A successful SEO strategy involves various components, including keyword research, on-page optimization, quality content creation, link building, technical SEO, and user experience optimization. These elements work together to improve a website's relevance and authority in the eyes of search engines.</div>
+    <label for="accordion3" class="accordion-item-title"><span class="icon"></span>What are the benefits of donating through SunPlay Network?</label>
+    <div class="accordion-item-desc">Benefits include increased transparency, reduced transaction costs, faster processing times, and the ability to track the direct impact of your donations.</div>
   </div>
 
   <div class="accordion-item">
     <input type="checkbox" id="accordion4">
-    <label for="accordion4" class="accordion-item-title"><span class="icon"></span>How does mobile optimization impact SEO?</label>
-    <div class="accordion-item-desc">Mobile optimization is crucial for SEO because search engines prioritize mobile-friendly websites. With the increasing use of smartphones, search engines like Google consider mobile responsiveness as a ranking factor. Websites that provide a seamless experience on mobile devices are more likely to rank higher in search results.</div>
+    <label for="accordion4" class="accordion-item-title"><span class="icon"></span>Which cryptocurrencies are accepted on SunPlay Network?</label>
+    <div class="accordion-item-desc">[Insert specific information about accepted cryptocurrencies, if available.]</div>
   </div>
 
   <div class="accordion-item">
     <input type="checkbox" id="accordion5">
-    <label for="accordion5" class="accordion-item-title"><span class="icon"></span>What is the role of backlinks in SEO, and how can they be acquired?</label>
-    <div class="accordion-item-desc">Backlinks, or inbound links from other websites to yours, play a significant role in SEO. They are considered a vote of confidence and can improve a site's authority. Quality over quantity is crucial when acquiring backlinks. Strategies for obtaining backlinks include creating high-quality content, guest posting, reaching out to industry influencers, and participating in community activities. It's important to focus on natural and ethical link-building practices.</div>
+    <label for="accordion5" class="accordion-item-title"><span class="icon"></span>How does SunPlay Network ensure the security and transparency of transactions?</label>
+    <div class="accordion-item-desc">The platform uses blockchain, which offers enhanced security and complete transparency, allowing users to see where and how funds are spent.</div>
+  </div>
+
+  <div class="accordion-item">
+    <input type="checkbox" id="accordion6">
+    <label for="accordion6" class="accordion-item-title"><span class="icon"></span>How can I start using SunPlay Network?</label>
+    <div class="accordion-item-desc">[Provide instructions on how to register, log in, and begin using the platform.]</div>
+  </div>
+
+  <div class="accordion-item">
+    <input type="checkbox" id="accordion7">
+    <label for="accordion7" class="accordion-item-title"><span class="icon"></span>Are there any fees associated with donations on SunPlay Network?</label>
+    <div class="accordion-item-desc">[Provide information on any transaction fees or other associated costs.]</div>
   </div>
 
 </div>
+<!-- End of SunPlay Network FAQ Section -->
+
+
 
 <footer class="wrap2">
   <ul>
     <li><a href="gouvernance.html">Gouvernance</a></li>
     <li><a href="team.html">Team</a></li>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="index.html">Blog</a></li>
+    <li><a href="history.html">History</a></li>
     <li><a href="contact.html">Contact</a></li>
     <li><a href="job.html">JOBS</a></li>
-    <li><a href=""></a>CGU</li>
-    <li>FAQ</li>
+    <li><a href="cgu.html">CGU</a></li>
+    <li><a href="faq.html">FAQ</a></li>
   </ul>
 </footer>
 
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Recherchez l'élément avec la classe "section_scroll" et faites défiler jusqu'à lui
+    var sectionScroll = document.querySelector('.section_scroll');
 
+    if (sectionScroll) {
+      sectionScroll.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+</script>
 
+<script src="asset/js/script.js"></script>
 </body>
 </html>
-

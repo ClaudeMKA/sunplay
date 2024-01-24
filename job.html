@@ -12,18 +12,55 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="asset/css/style.css">
 </head>
 <body>
+<div class="dropdown-menu" id="dropdownMenu">
+  <!-- Contenu du menu déroulant -->
+  <p><a href="history.html">History </a></p>
+  <p><a href="gouvernance.html">Gouvernance</a> </p>
+  <p><a href="team.html">Team</a></p>
+  <p><a href="contact.html">Contact</a></p>
+  <p><a href="job.html"> JOBS </a> </p>
+  <p class="login"> LAUNCH APP </p>
+
+  <!-- Ajoutez un élément pour la croix -->
+  <div class="close-button" id="closeButton">&times;</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="applyModal" tabindex="-1" role="dialog" aria-labelledby="applyModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="applyModalLabel">Job Application</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Please contact us at <a href="SunPlayNetwork@proton.me">SunPlayNetwork@proton.me</a> to apply for this job.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <header>
   <nav class="nav">
     <div class="">
       <a href="index.html"><img src="asset/img/logo.png" alt="logo" class="logo_image"></a>
     </div>
-    <div class="navigation">
-      <p><a href="index.html">History </a></p>
+    <div class="navigation bloc_navigation_burger" id="mainNav">
+      <p><a href="history.html">History </a></p>
       <p><a href="gouvernance.html">Gouvernance</a> </p>
       <p><a href="team.html">Team</a></p>
       <p><a href="contact.html">Contact</a></p>
@@ -33,9 +70,15 @@
         <p class="login"> LAUNCH APP </p>
       </div>
     </div>
-  </nav>
 
+    <div class="menu_burger" id="menuBurger">
+      <i class="fas fa-bars"></i>
+    </div>
+
+
+  </nav>
 </header>
+
 
 <section class="home">
 
@@ -62,154 +105,52 @@
   </div>
 
 
-  <section class="carriere wrap">
-    <div class="container mt-3">
-      <div class="container mt-3">
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <div class="input-group">
-              <select class="custom-select" id="filterSelect">
-                <option value="developpeur">Développeur</option>
-                <option value="full-stack">Full Stack</option>
-                <!-- Ajoutez d'autres options de filtre au besoin -->
-              </select>
-              <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button" id="filterButton">
-                  <i class="fas fa-filter"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <section class="carriere wrap section_scroll">
 
-
-    </div>
 
     <div class="grand_bloc_carriere wrap">
+      <div class="all_blog">
 
-        <div class="all_blog">
-          <div class="sous_bloc_all_blog">
-            <div class="poster_blog">
-              <img src="https://images.pexels.com/photos/5926382/pexels-photo-5926382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-
-            </div>
-            <p class="date">
-             Developpeur full stack
-            </p>
-            <div class="trait"></div>
-            <p class="description">We are currently seeking a talented and motivated Full Stack Developer to join our team</p>
-            <button> to apply for a job  <i class="fa-solid fa-arrow-up-right-from-square"></i> </button>
+        <!-- Blockchain Developer -->
+        <div class="sous_bloc_all_blog">
+          <div class="poster_blog">
+            <img src="https://images.pexels.com/photos/5926382/pexels-photo-5926382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Blockchain Developer">
           </div>
-
-          <div class="sous_bloc_all_blog">
-            <div class="poster_blog">
-              <img src="https://images.pexels.com/photos/5926382/pexels-photo-5926382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-
-            </div>
-            <p class="date">
-              Developpeur full stack
-            </p>
-            <div class="trait"></div>
-            <p class="description">We are currently seeking a talented and motivated Full Stack Developer to join our team</p>
-            <button> to apply for a job  <i class="fa-solid fa-arrow-up-right-from-square"></i> </button>
-          </div>
-
-          <div class="sous_bloc_all_blog">
-            <div class="poster_blog">
-              <img src="https://images.pexels.com/photos/5926382/pexels-photo-5926382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-
-            </div>
-            <p class="date">
-              Developpeur full stack
-            </p>
-            <div class="trait"></div>
-            <p class="description">We are currently seeking a talented and motivated Full Stack Developer to join our team</p>
-            <button> to apply for a job  <i class="fa-solid fa-arrow-up-right-from-square"></i> </button>
-          </div>
-
-          <div class="sous_bloc_all_blog">
-            <div class="poster_blog">
-              <img src="https://images.pexels.com/photos/5926382/pexels-photo-5926382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-
-            </div>
-            <p class="date">
-              Developpeur full stack
-            </p>
-            <div class="trait"></div>
-            <p class="description">We are currently seeking a talented and motivated Full Stack Developer to join our team</p>
-            <button> to apply for a job  <i class="fa-solid fa-arrow-up-right-from-square"></i> </button>
-          </div>
-
-          <div class="sous_bloc_all_blog">
-            <div class="poster_blog">
-              <img src="https://images.pexels.com/photos/5926382/pexels-photo-5926382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-
-            </div>
-            <p class="date">
-              Developpeur full stack
-            </p>
-            <div class="trait"></div>
-            <p class="description">We are currently seeking a talented and motivated Full Stack Developer to join our team</p>
-            <button> to apply for a job  <i class="fa-solid fa-arrow-up-right-from-square"></i> </button>
-          </div>
-
-          <div class="sous_bloc_all_blog">
-            <div class="poster_blog">
-              <img src="https://images.pexels.com/photos/5926382/pexels-photo-5926382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-
-            </div>
-            <p class="date">
-              Developpeur full stack
-            </p>
-            <div class="trait"></div>
-            <p class="description">We are currently seeking a talented and motivated Full Stack Developer to join our team</p>
-            <button> to apply for a job  <i class="fa-solid fa-arrow-up-right-from-square"></i> </button>
-          </div>
-
-          <div class="sous_bloc_all_blog">
-            <div class="poster_blog">
-              <img src="https://images.pexels.com/photos/5926382/pexels-photo-5926382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-
-            </div>
-            <p class="date">
-              Developpeur full stack
-            </p>
-            <div class="trait"></div>
-            <p class="description">We are currently seeking a talented and motivated Full Stack Developer to join our team</p>
-            <button> to apply for a job  <i class="fa-solid fa-arrow-up-right-from-square"></i> </button>
-          </div>
-
-          <div class="sous_bloc_all_blog">
-            <div class="poster_blog">
-              <img src="https://images.pexels.com/photos/5926382/pexels-photo-5926382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-
-            </div>
-            <p class="date">
-              Developpeur full stack
-            </p>
-            <div class="trait"></div>
-            <p class="description">We are currently seeking a talented and motivated Full Stack Developer to join our team</p>
-            <button> to apply for a job  <i class="fa-solid fa-arrow-up-right-from-square"></i> </button>
-          </div>
-
-          <div class="sous_bloc_all_blog">
-            <div class="poster_blog">
-              <img src="https://images.pexels.com/photos/5926382/pexels-photo-5926382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-
-            </div>
-            <p class="date">
-              Developpeur full stack
-            </p>
-            <div class="trait"></div>
-            <p class="description">We are currently seeking a talented and motivated Full Stack Developer to join our team</p>
-            <button> to apply for a job  <i class="fa-solid fa-arrow-up-right-from-square"></i> </button>
-          </div>
-
-
-
+          <p class="date">Blockchain Developer</p>
+          <div class="trait"></div>
+          <p class="description">Seeking a Blockchain Developer to innovate in blockchain tech. Develop and implement advanced blockchain solutions.</p>
+          <button data-toggle="modal" data-target="#applyModal">Apply for this job<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
         </div>
+
+        <!-- Web3 Marketing Specialist -->
+        <div class="sous_bloc_all_blog">
+          <div class="poster_blog">
+            <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Web3 Marketing">
+          </div>
+          <p class="date">Web3 Marketing Specialist</p>
+          <div class="trait"></div>
+          <p class="description">Join as a Web3 Marketing Specialist. Lead and innovate in Web3 marketing strategies and digital outreach.</p>
+          <button data-toggle="modal" data-target="#applyModal">Apply for this job<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+        </div>
+
+        <!-- Tokenomist -->
+        <div class="sous_bloc_all_blog">
+          <div class="poster_blog">
+            <img src="https://images.pexels.com/photos/590041/pexels-photo-590041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Tokenomist">
+          </div>
+          <p class="date">Tokenomist</p>
+          <div class="trait"></div>
+          <p class="description">Seeking a Tokenomist expert in digital currencies. Deep knowledge of token economics and digital assets.</p>
+          <button data-toggle="modal" data-target="#applyModal">Apply for this job<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+        </div>
+
+        <!-- Additional Job Listings -->
+        <!-- Ajoutez plus d'annonces en suivant cette structure -->
+
       </div>
+    </div>
+
+    </div>
 
   </section>
 
@@ -220,12 +161,26 @@
   <ul>
     <li><a href="gouvernance.html">Gouvernance</a></li>
     <li><a href="team.html">Team</a></li>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="index.html">Blog</a></li>
+    <li><a href="history.html">History</a></li>
     <li><a href="contact.html">Contact</a></li>
     <li><a href="job.html">JOBS</a></li>
-    <li><a href=""></a>CGU</li>
-    <li>FAQ</li>
+    <li><a href="cgu.html">CGU</a></li>
+    <li><a href="faq.html">FAQ</a></li>
   </ul>
 </footer>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Recherchez l'élément avec la classe "section_scroll" et faites défiler jusqu'à lui
+    var sectionScroll = document.querySelector('.section_scroll');
+
+    if (sectionScroll) {
+      sectionScroll.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+</script>
+
+<script src="asset/js/script.js"></script>
 </body>
+</html>

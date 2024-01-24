@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -16,13 +16,26 @@
     <link rel="stylesheet" href="asset/css/style.css">
 </head>
 <body>
+<div class="dropdown-menu" id="dropdownMenu">
+    <!-- Contenu du menu déroulant -->
+    <p><a href="history.html">History </a></p>
+    <p><a href="gouvernance.html">Gouvernance</a> </p>
+    <p><a href="team.html">Team</a></p>
+    <p><a href="contact.html">Contact</a></p>
+    <p><a href="job.html"> JOBS </a> </p>
+    <p class="login"> LAUNCH APP </p>
+
+    <!-- Ajoutez un élément pour la croix -->
+    <div class="close-button" id="closeButton">&times;</div>
+</div>
+
 <header>
     <nav class="nav">
         <div class="">
             <a href="index.html"><img src="asset/img/logo.png" alt="logo" class="logo_image"></a>
         </div>
-        <div class="navigation">
-            <p><a href="index.html">History </a></p>
+        <div class="navigation bloc_navigation_burger" id="mainNav">
+            <p><a href="history.html">History </a></p>
             <p><a href="gouvernance.html">Gouvernance</a> </p>
             <p><a href="team.html">Team</a></p>
             <p><a href="contact.html">Contact</a></p>
@@ -32,8 +45,13 @@
                 <p class="login"> LAUNCH APP </p>
             </div>
         </div>
-    </nav>
 
+        <div class="menu_burger" id="menuBurger">
+            <i class="fas fa-bars"></i>
+        </div>
+
+
+    </nav>
 </header>
 <section class="home">
 
@@ -52,85 +70,40 @@
     </div>
 
 </section>
-<section class="page_gouvernance">
+<section class="page_gouvernance section_scroll">
     <div class="grd_bloc_page_gouvernance wrap2">
         <div class="sous_bloc_page_gouvernance">
-            <h3>Gouvernance </h3>
-            <p> Sunplay Network is a public good owned and governed by SNP token holders.</p>
-        </div>
-
-        <div class="sous_bloc_page_gouvernance_2 wrap3">
-            <div class="">
-                <img src="asset/img/logo.png" alt="logo" class="logo_image img_logo">
-            </div>
-            <div class="">
-                <h2>The UNI Token</h2>
-
-                <p>
-                The Uniswap token enables community ownership and active stewardship
-                of the Protocol. UNI holders govern the Protocol through an on-chain governance process.</p>
-            <button> Read more  <i class="fa-solid fa-arrow-up-right-from-square"></i> </button>
-            </div>
+            <h3>Coming Soon</h3>
         </div>
     </div>
 </section>
 
-<section class="gouvernance_app wrap2">
-    <div class="grd_bloc_gouvernance_app">
-        <h4>THE GOVERNANCE APPS</h4>
-        <p>Share your opinions and shape the future of the protocol</p>
-    </div>
-    <div class="bloc_app">
-    <div class="sous_bloc_gouvernance_app">
-        <img src="https://uniswap.org/images/uni-thumbnail.svg" alt="logo" class="logo_app_gouvernance">
-        <h3> Gouvernance Forum   <i class="fa-solid fa-arrow-up-right-from-square"></i> </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam cum ea eius est exercitationem, fugit inventore ipsum iure iusto labore molestias.</p>
-    </div>
-        <div class="sous_bloc_gouvernance_app">
-            <img src="https://uniswap.org/images/uni-thumbnail.svg" alt="logo" class="logo_app_gouvernance">
-            <h3> Gouvernance Forum   <i class="fa-solid fa-arrow-up-right-from-square"></i> </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam cum ea eius est exercitationem, fugit inventore ipsum iure iusto labore molestias.</p>
-        </div>
-        <div class="sous_bloc_gouvernance_app">
-            <img src="https://uniswap.org/images/uni-thumbnail.svg" alt="logo" class="logo_app_gouvernance">
-            <h3> Gouvernance Forum   <i class="fa-solid fa-arrow-up-right-from-square"></i> </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam cum ea eius est exercitationem, fugit inventore ipsum iure iusto labore molestias.</p>
-        </div>
-    </div>
-    <div class="trait"></div>
-    <div class="grd_bloc_gouvernance_process">
-        <div class="sous_bloc_gouvernance_process">
-            <h4>THE GOVERNANCE PROCESS</h4>
-            <div class="process_phase">
-             Phase 1: Temperature Check
-            </div>
-            <div class="process_phase">
-                Phase 2: Consensus Check
-            </div>
-            <div class="process_phase">
-             Gouvernance Proposal
-            </div>
-        </div>
-        <div class="sous_bloc_gouvernance_process_2">
-            <h4>Temperature Check</h4>
-            <p>The Temperature Check process determines whether there is sufficient will to make changes to the status quo. At the end of the two days, a majority vote with a 25k UNI yes-vote threshold wins. If the Temperature check does not suggest a change from the status quo, the topic will be closed on the governance site. If the Temperature Check does suggest a change, proceed to Stage 2: Consensus Check.</p>
-            <button> Read more  <i class="fa-solid fa-arrow-up-right-from-square"></i> </button>
-        </div>
-    </div>
-</section>
 
 <footer class="wrap2">
     <ul>
         <li><a href="gouvernance.html">Gouvernance</a></li>
         <li><a href="team.html">Team</a></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html">Blog</a></li>
+        <li><a href="history.html">History</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="job.html">JOBS</a></li>
-        <li><a href=""></a>CGU</li>
-        <li>FAQ</li>
+        <li><a href="cgu.html">CGU</a></li>
+        <li><a href="faq.html">FAQ</a></li>
     </ul>
 </footer>
 
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Recherchez l'élément avec la classe "section_scroll" et faites défiler jusqu'à lui
+        var sectionScroll = document.querySelector('.section_scroll');
+
+        if (sectionScroll) {
+            sectionScroll.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+</script>
+
+<script src="asset/js/script.js"></script>
 </body>
 </html>

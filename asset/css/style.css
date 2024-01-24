@@ -1,12 +1,75 @@
 @import url(https://db.onlinewebfonts.com/c/877157025d03c4d7ed11a04f1dfd4472?family=Havelock+Titling+Bold);
-body {
-    font-family: "Havelock Titling Bold", sans-serif;
+
+@font-face {
+    font-family: 'aniyah_personal_useregular';
+    src: url('../../font/aniyah-webfont.woff2') format('woff2'),
+    url('../../font/aniyah-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-h1 {
-    font-family: "Havelock Titling Bold", sans-serif;
-    /* Ajoutez d'autres styles au besoin */
+@font-face {
+    font-family: 'amandaart_design';
+    src: url('../../font/amanda-webfont.woff2') format('woff2'),
+    url('../../font/amanda-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
+
+
+@font-face {
+    font-family: 'adeliciaregular';
+    src: url('../../font/adelicia-webfont.woff2') format('woff2'),
+    url('../../font/adelicia-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'harvestregular';
+    src: url('../../font/harvest-webfont.woff2') format('woff2'),
+    url('../../font/harvest-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'elegant_demoregular';
+    src: url('../../font/elegant_demo-webfont.woff2') format('woff2'),
+    url('../../font/elegant_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'samantharegular';
+    src: url('../../font/samantha-webfont.woff2') format('woff2'),
+    url('../../font/samantha-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'carolineregular';
+    src: url('../../font/caroline-webfont.woff2') format('woff2'),
+    url('../../font/caroline-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+
 
 /* ... et ainsi de suite pour d'autres éléments de votre page */
 
@@ -32,7 +95,6 @@ ul{
 }
 body{
     background-color: #191B1F;
-    font-family: "Havelock Titling Bold";
     color: white;
     overflow-x: hidden;
 } img{
@@ -100,7 +162,14 @@ h1 {
     align-items: start;
     font-size: 1.3rem;
 }
-
+.sunplay h1{
+    font-family: 'amandaart_design';
+    font-size: 5rem;
+    font-weight: normal;
+}
+.sunplay span{
+    font-weight: bold;
+}
 p.poppins{
     width: 100%;
     margin-left: 0.5rem;
@@ -202,6 +271,7 @@ padding: 2rem;
     font-size: 16px;
     padding: 10px 12px;
     color: inherit;
+    white-space: nowrap;
 }
 .nav{
     display: flex;
@@ -294,6 +364,8 @@ padding: 2rem;
     /* Modification au survol */
     background-image: linear-gradient(80deg, rgb(239, 180, 120), rgb(243, 123, 91));
 }
+
+
 .gouvernance{
     margin-bottom: 8rem;
 }
@@ -344,6 +416,7 @@ footer ul {
     font-size: 1rem;
     font-family:"Poppins";
     margin-bottom: 5rem;
+    flex-wrap: wrap;
 }
 button{
     padding: 8px 0.85rem;
@@ -377,9 +450,10 @@ button{
     width: 80%;
 }
 .grd_bloc_page_gouvernance .sous_bloc_page_gouvernance h3{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-family: "Poppins";
     opacity: 80%;
+    margin-bottom: 5rem
 }
 
 .grd_bloc_page_gouvernance .sous_bloc_page_gouvernance p{
@@ -503,9 +577,9 @@ display: flex;
     margin: 0;
     width: 100%;
 }
-.all_blog{
+.all_blog {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
 }
 .sous_bloc_all_blog{
     display: flex;
@@ -547,7 +621,6 @@ font-family: "Poppins";
     text-align: -webkit-center;
 }
 .modal-content{
-    font-family: "Havelock Titling Bold";
     background-color: #191B1F;
 }
 .carriere .poster_blog img{
@@ -568,15 +641,16 @@ font-family: "Poppins";
     flex-wrap: wrap;
 }
 
-.team .grd_bloc_team{
+.team .grd_bloc_team {
     margin-top: 14rem;
     margin-bottom: 14rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 10rem; /* Vous pouvez ajuster la valeur selon votre besoin */
-
-
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    row-gap: 10rem; /* Espace vertical de 10rem entre les éléments */
 }
+
+
 .sous_bloc_team {
     width: 400px;
     margin: 20px;
@@ -633,6 +707,9 @@ font-family: "Poppins";
 .reseaux i {
     color: #F37B5B;
     font-size: 2rem;
+}
+.reseaux{
+    margin-top: 1rem;
 }
 /* Contact */
 .contact{
@@ -739,6 +816,7 @@ input[type="checkbox"]:checked
     margin-left: 14px;
 }
 
+
 @media screen and (max-width: 767px) {
     .accordion {
         padding: 0 16px;
@@ -747,4 +825,106 @@ input[type="checkbox"]:checked
         font-size: 22px;
     }
 }
+.menu_burger{
+    display: none;
+}
+body {
+    margin: 0;
+}
 
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+    transition: color 0.3s ease; /* Ajouter une transition sur la couleur */
+}
+
+.dropdown-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    z-index: 5;
+    align-self: center;
+    gap: 1rem;
+    place-content: center;
+    backdrop-filter: blur(8px);
+    transition: right 0.3s ease, opacity 0.3s ease; /* Ajouter une transition sur right et opacity */
+    opacity: 0; /* Ajouter l'opacité initiale à 0 */
+}
+
+.dropdown-menu.show {
+    right: 0;
+    opacity: 1; /* Ajouter l'opacité lorsqu'il est affiché */
+    display: flex;
+    transition: right 0.3s ease, opacity 0.3s ease; /* Ajouter une transition sur right et opacity */
+}
+
+
+/* responsive  /*
+ */
+
+@media screen and (max-width: 1100px) {
+   .navigation{
+       display: none;
+   }
+    .menu_burger{
+        display: block;
+        font-size: 2.5rem;
+        color: #F37B5B;
+        cursor: pointer;
+    }
+    .logo_image {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sunplay h1 {
+        font-family: 'amandaart_design';
+        font-size: 4rem;
+        font-weight: normal;
+    }
+    .grand_bloc_chiffre {
+        margin-top: 2rem;
+        margin-bottom: 10rem;
+        display: flex;
+        gap: 2rem;
+        align-self: center;
+        font-family: 'Poppins';
+        font-weight: bold;
+        text-align: -webkit-center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 470px) {
+    .sunplay h1 {
+        font-family: 'amandaart_design';
+        font-size: 3rem;
+        font-weight: normal;
+    }
+    @media screen and (max-width: 380px) {
+        .sunplay h1 {
+            font-family: 'amandaart_design';
+            font-size: 2.5rem;
+            font-weight: normal;
+        }
+    }
+    .img_job img {
+        bottom: 73%;
+
+    }
+
+}

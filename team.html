@@ -16,13 +16,26 @@
     <link rel="stylesheet" href="asset/css/style.css">
 </head>
 <body>
+<div class="dropdown-menu" id="dropdownMenu">
+    <!-- Contenu du menu déroulant -->
+    <p><a href="history.html">History </a></p>
+    <p><a href="gouvernance.html">Gouvernance</a> </p>
+    <p><a href="team.html">Team</a></p>
+    <p><a href="contact.html">Contact</a></p>
+    <p><a href="job.html"> JOBS </a> </p>
+    <p class="login"> LAUNCH APP </p>
+
+    <!-- Ajoutez un élément pour la croix -->
+    <div class="close-button" id="closeButton">&times;</div>
+</div>
+
 <header>
     <nav class="nav">
         <div class="">
             <a href="index.html"><img src="asset/img/logo.png" alt="logo" class="logo_image"></a>
         </div>
-        <div class="navigation">
-            <p><a href="index.html">History </a></p>
+        <div class="navigation bloc_navigation_burger" id="mainNav">
+            <p><a href="history.html">History </a></p>
             <p><a href="gouvernance.html">Gouvernance</a> </p>
             <p><a href="team.html">Team</a></p>
             <p><a href="contact.html">Contact</a></p>
@@ -32,9 +45,15 @@
                 <p class="login"> LAUNCH APP </p>
             </div>
         </div>
-    </nav>
 
+        <div class="menu_burger" id="menuBurger">
+            <i class="fas fa-bars"></i>
+        </div>
+
+
+    </nav>
 </header>
+
 
 <!-- Bloc  1 -->
 <section class="home">
@@ -42,7 +61,8 @@
     <div class="bloc_info_page wrap">
         <div class="sunplay">
             <div class="">
-                <h1>Sunplay Network</h1>
+
+                <h1>Sunplay  <span> Network </span></h1>
                 <p class="poppins">A new era of decentralized giving.
                 </p>
             </div>
@@ -52,103 +72,140 @@
     </div>
 </section>
 <h2 class="our_team"> Our Team </h2>
-<section class="team wrap">
+<section class="team wrap section_scroll">
 
     <div class="grd_bloc_team">
         <div class="sous_bloc_team">
             <div class="img_job">
-                <img src="asset/img/logo2.png" alt="employée" width="500">
+                <img src="asset/img/logo_sunplay3.png" alt="logo" width="500">
             </div>
-            <p class="prenom_nom"> Claude Miakouikila </p>
-            <p class="poste">Developpeur </p>
-            <p class="presentation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi aspernatur consequuntur delectus dolor, ducimus</p>
+            <p class="prenom_nom"> Chahine S</p>
+            <p class="poste">chef de projet </p>
+            <p class="presentation">Chahine S plays the crucial role of project manager in our team. With exceptional expertise in project management, he oversees and coordinates all phases of development efficiently, ensuring that projects are delivered on time and meet quality standards.</p>
             <div class="reseaux">
                 <!-- Ajoutez des icônes de réseaux sociaux ici -->
-                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/chahine-saibi-a86867154/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
                 <!-- Ajoutez d'autres icônes selon vos besoins -->
             </div>
         </div>
         <div class="sous_bloc_team">
             <div class="img_job">
-                <img src="asset/img/logo2.png" alt="employée" width="500">
+                <img src="asset/img/logo2.png" alt="logo" width="500">
             </div>
-            <p class="prenom_nom"> Claude Miakouikila </p>
+            <p class="prenom_nom"> Zakaria Z CEO</p>
             <p class="poste">Developpeur </p>
-            <p class="presentation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi aspernatur consequuntur delectus dolor, ducimus</p>
+            <p class="presentation">Zakaria Z is our founder and CEO. Besides leading the company, he also brings his expertise in development. With a strategic vision, Zakaria guides the team towards success by designing innovative solutions and establishing key partnerships.</p>
             <div class="reseaux">
                 <!-- Ajoutez des icônes de réseaux sociaux ici -->
-                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/zakaria-z-77a900173/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
                 <!-- Ajoutez d'autres icônes selon vos besoins -->
             </div>
         </div>
         <div class="sous_bloc_team">
             <div class="img_job">
-                <img src="asset/img/logo2.png" alt="employée" width="500">
+                <img src="asset/img/logo_sunplay2.png" alt="logo" width="500">
             </div>
-            <p class="prenom_nom"> Claude Miakouikila </p>
-            <p class="poste">Developpeur </p>
-            <p class="presentation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi aspernatur consequuntur delectus dolor, ducimus</p>
+            <p class="prenom_nom"> Claude M </p>
+            <p class="poste">Développeur FullStack </p>
+            <p class="presentation">Claude M is a talented FullStack developer who brings versatile experience to our team. With mastery in both front-end and back-end technologies, he plays a key role in the complete development of our applications, ensuring robust and efficient solutions.</p>
             <div class="reseaux">
                 <!-- Ajoutez des icônes de réseaux sociaux ici -->
-                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/claude-miakouikila-1514a2226/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
                 <!-- Ajoutez d'autres icônes selon vos besoins -->
             </div>
         </div>
         <div class="sous_bloc_team">
             <div class="img_job">
-                <img src="asset/img/logo2.png" alt="employée" width="500">
+                <img src="asset/img/logo_sunplay4.png" alt="logo" width="500">
             </div>
-            <p class="prenom_nom"> Claude Miakouikila </p>
-            <p class="poste">Developpeur </p>
-            <p class="presentation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi aspernatur consequuntur delectus dolor, ducimus</p>
+            <p class="prenom_nom"> Karim Y </p>
+            <p class="poste">Chef de projet</p>
+            <p class="presentation">Karim Y serves as a Project Manager, orchestrating the development of new features and overseeing the continuous improvement of our applications. With in-depth expertise in programming, Karim works closely with teams to ensure the success of each project.</p>
             <div class="reseaux">
                 <!-- Ajoutez des icônes de réseaux sociaux ici -->
-                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/karim-yeles-18451099/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
                 <!-- Ajoutez d'autres icônes selon vos besoins -->
             </div>
         </div>
+
         <div class="sous_bloc_team">
             <div class="img_job">
-                <img src="asset/img/logo2.png" alt="employée" width="500">
+                <img src="asset/img/logo_sunplay5.png" alt="logo" width="500">
             </div>
-            <p class="prenom_nom"> Claude Miakouikila </p>
-            <p class="poste">Developpeur </p>
-            <p class="presentation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi aspernatur consequuntur delectus dolor, ducimus</p>
+            <p class="prenom_nom"> Hamza A</p>
+            <p class="poste">Développeur Blockchain"</p>
+            <p class="presentation">Hamza A specializes in blockchain development, working on innovative projects and contributing to the implementation of cutting-edge technologies. His technical expertise is crucial for the success of our blockchain initiatives</p>
             <div class="reseaux">
                 <!-- Ajoutez des icônes de réseaux sociaux ici -->
-                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/hamza-a-dev/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
                 <!-- Ajoutez d'autres icônes selon vos besoins -->
             </div>
         </div>
+
+        <div class="sous_bloc_team">
+            <div class="img_job">
+                <img src="asset/img/sunplay_logo6.png" alt="logo" width="500">
+            </div>
+            <p class="prenom_nom"> Léa M </p>
+            <p class="poste">Community Management </p>
+            <p class="presentation">Léa M is in charge of community management, ensuring effective communication with our online community. She manages social media and creates positive interactions with our users.</p>
+            <div class="reseaux">
+                <!-- Ajoutez des icônes de réseaux sociaux ici -->
+                <a href="https://www.linkedin.com/in/l%C3%A9a-sifi-875a01201/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
+                <!-- Ajoutez d'autres icônes selon vos besoins -->
+            </div>
+        </div>
+
+        <div class="sous_bloc_team">
+            <div class="img_job">
+                <img src="asset/img/logo.png" alt="logo" width="500">
+            </div>
+            <p class="prenom_nom"> Sofyan B </p>
+            <p class="poste">Tokenomist</p>
+            <p class="presentation">Sofyan B serves as a Tokenomist, playing a pivotal role in the analysis and management of digital tokens within our projects. His expertise in token economics is fundamental to the development of blockchain-based solutions, ensuring their viability and efficiency in the digital asset market.</p>
+            <div class="reseaux">
+                <!-- Add social network icons here -->
+                <a href="https://www.linkedin.com/in/sofyan-benhaddou/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <!-- Add more icons as needed -->
+            </div>
+        </div>
+
     </div>
 </section>
+
 
 <footer class="wrap2">
     <ul>
         <li><a href="gouvernance.html">Gouvernance</a></li>
         <li><a href="team.html">Team</a></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html">Blog</a></li>
+        <li><a href="history.html">History</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="job.html">JOBS</a></li>
-        <li><a href=""></a>CGU</li>
-        <li>FAQ</li>
+        <li><a href="cgu.html">CGU</a></li>
+        <li><a href="faq.html">FAQ</a></li>
     </ul>
 </footer>
 
 
 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Recherchez l'élément avec la classe "section_scroll" et faites défiler jusqu'à lui
+        var sectionScroll = document.querySelector('.section_scroll');
 
+        if (sectionScroll) {
+            sectionScroll.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+</script>
+
+<script src="asset/js/script.js"></script>
 </body>
 </html>
 

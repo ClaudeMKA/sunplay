@@ -16,13 +16,26 @@
     <link rel="stylesheet" href="asset/css/style.css">
 </head>
 <body>
+<div class="dropdown-menu" id="dropdownMenu">
+    <!-- Contenu du menu déroulant -->
+    <p><a href="history.html">History </a></p>
+    <p><a href="gouvernance.html">Gouvernance</a> </p>
+    <p><a href="team.html">Team</a></p>
+    <p><a href="contact.html">Contact</a></p>
+    <p><a href="job.html"> JOBS </a> </p>
+    <p class="login"> LAUNCH APP </p>
+
+    <!-- Ajoutez un élément pour la croix -->
+    <div class="close-button" id="closeButton">&times;</div>
+</div>
+
 <header>
     <nav class="nav">
         <div class="">
             <a href="index.html"><img src="asset/img/logo.png" alt="logo" class="logo_image"></a>
         </div>
-        <div class="navigation">
-            <p><a href="index.html">History </a></p>
+        <div class="navigation bloc_navigation_burger" id="mainNav">
+            <p><a href="history.html">History </a></p>
             <p><a href="gouvernance.html">Gouvernance</a> </p>
             <p><a href="team.html">Team</a></p>
             <p><a href="contact.html">Contact</a></p>
@@ -32,10 +45,14 @@
                 <p class="login"> LAUNCH APP </p>
             </div>
         </div>
+
+        <div class="menu_burger" id="menuBurger">
+            <i class="fas fa-bars"></i>
+        </div>
+
+
     </nav>
-
 </header>
-
 <!-- Bloc  1 -->
 <section class="home">
 
@@ -51,7 +68,7 @@
         </div>
     </div>
 </section>
-<section class="contact">
+<section class="contact section_scroll">
     <div class="container">
         <h1>Contact Us</h1>
         <p>Feel free to connect with us on Twitter.</p>
@@ -65,22 +82,32 @@
 </section>
 
 
+
+
 <footer class="wrap2">
     <ul>
         <li><a href="gouvernance.html">Gouvernance</a></li>
         <li><a href="team.html">Team</a></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html">Blog</a></li>
+        <li><a href="history.html">History</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="job.html">JOBS</a></li>
-        <li><a href=""></a>CGU</li>
-        <li>FAQ</li>
+        <li><a href="cgu.html">CGU</a></li>
+        <li><a href="faq.html">FAQ</a></li>
     </ul>
 </footer>
 
 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Recherchez l'élément avec la classe "section_scroll" et faites défiler jusqu'à lui
+        var sectionScroll = document.querySelector('.section_scroll');
 
+        if (sectionScroll) {
+            sectionScroll.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+</script>
 
+<script src="asset/js/script.js"></script>
 </body>
 </html>
-
