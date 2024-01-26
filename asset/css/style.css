@@ -133,7 +133,9 @@ h1 {
 .wrap3 {max-width: 1000px; width:100%;margin: 0 auto;}
 
 
-
+p{
+    margin-bottom: 0;
+}
 
 .element {
     animation: animationName 14s infinite alternate;
@@ -148,6 +150,7 @@ h1 {
     bottom: 10%;
     transform: translateY(0px) translateX(-50%) scale(1);
     opacity: 1;
+    z-index: -1;
 }
 
 .sunplay {
@@ -196,6 +199,7 @@ p.poppins{
      gap: 1rem;
      align-items: center;
  }
+
 
 
 
@@ -447,7 +451,8 @@ button{
     margin-top: 13rem;
 }
 .sous_bloc_page_gouvernance{
-    width: 80%;
+    width: 100%;
+    text-align: -webkit-center;
 }
 .grd_bloc_page_gouvernance .sous_bloc_page_gouvernance h3{
     font-size: 2.5rem;
@@ -733,6 +738,8 @@ font-family: "Poppins";
 
 .contact .social-link {
     margin-top: 20px;
+    display: flex;
+    gap: 3rem;
 }
 
 .contact .social-link a {
@@ -872,6 +879,9 @@ body {
 
 /* responsive  /*
  */
+.none-connected{
+    display: none;
+}
 
 @media screen and (max-width: 1100px) {
    .navigation{
@@ -886,6 +896,13 @@ body {
     .logo_image {
         width: 30%;
     }
+    .sunplay{
+        padding: 1rem;
+    }
+    .none-connected{
+        display: block;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -927,4 +944,23 @@ body {
 
     }
 
+}
+.btn-menu{
+    padding: 8px 0.85rem;
+    text-decoration: none;
+    border-radius: 12px;
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 2px solid transparent;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: #F37B5B 1px 1000px 1px inset;
+    opacity: 0.9;
+    background-color:  #F37B5B;
+    color: white !important;
+    width: fit-content !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    height: fit-content !important;
 }
