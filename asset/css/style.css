@@ -340,7 +340,7 @@ padding: 2rem;
         width: 100%;
 }
 .history .grd_bloc_history{
-
+padding: 2rem;
 }
 .sous_bloc_history {
     /* Propriétés initiales */
@@ -851,10 +851,10 @@ body {
 }
 
 .dropdown-menu {
-    display: none;
+    visibility: hidden; /* Utilisez visibility au lieu de display pour le cacher initialement */
     position: fixed;
     top: 0;
-    right: -100%;
+    right: -100%; /* Position de départ hors écran */
     background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
     flex-direction: column;
@@ -865,15 +865,16 @@ body {
     gap: 1rem;
     place-content: center;
     backdrop-filter: blur(8px);
-    transition: right 0.3s ease, opacity 0.3s ease; /* Ajouter une transition sur right et opacity */
-    opacity: 0; /* Ajouter l'opacité initiale à 0 */
+    opacity: 0; /* Opacité initiale à 0 pour l'animation */
+    transition: right 0.3s ease, opacity 0.3s ease; /* Transition pour right et opacity */
 }
 
 .dropdown-menu.show {
-    right: 0;
-    opacity: 1; /* Ajouter l'opacité lorsqu'il est affiché */
-    display: flex;
-    transition: right 0.3s ease, opacity 0.3s ease; /* Ajouter une transition sur right et opacity */
+    right: 0; /* Position finale une fois le menu ouvert */
+    opacity: 1; /* Opacité totale une fois le menu ouvert */
+    visibility: visible; /* Rendre le menu visible */
+    display: flex; /* Utiliser flexbox pour afficher le contenu */
+    /* La propriété transition est conservée pour les changements d'état */
 }
 
 
@@ -888,13 +889,17 @@ body {
        display: none;
    }
     .menu_burger{
-        display: block;
         font-size: 2.5rem;
         color: #F37B5B;
         cursor: pointer;
+        display: flex;
     }
     .logo_image {
-        width: 30%;
+        width: 50%;
+
+    }
+    .nav{
+        padding: 0rem;
     }
     .sunplay{
         padding: 1rem;
@@ -904,7 +909,23 @@ body {
     }
 
 }
-
+@media screen and (max-width: 650px){
+    .nav {
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    footer ul {
+        display: flex;
+        gap: 2rem;
+        font-size: 1rem;
+        font-family: "Poppins";
+        margin-bottom: 5rem;
+        flex-wrap: wrap;
+        padding: 1rem;
+        margin-top: 6rem;
+    }
+}
 @media screen and (max-width: 600px) {
     .sunplay h1 {
         font-family: 'amandaart_design';
@@ -922,6 +943,9 @@ body {
         text-align: -webkit-center;
         justify-content: center;
         flex-direction: column;
+    }
+    .logo_image {
+        width: 40%;
     }
 
 }
