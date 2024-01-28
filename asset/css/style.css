@@ -1,52 +1,9 @@
 @import url(https://db.onlinewebfonts.com/c/877157025d03c4d7ed11a04f1dfd4472?family=Havelock+Titling+Bold);
 
 @font-face {
-    font-family: 'aniyah_personal_useregular';
-    src: url('../../font/aniyah-webfont.woff2') format('woff2'),
-    url('../../font/aniyah-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'amandaart_design';
-    src: url('../../font/amanda-webfont.woff2') format('woff2'),
-    url('../../font/amanda-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-@font-face {
-    font-family: 'adeliciaregular';
-    src: url('../../font/adelicia-webfont.woff2') format('woff2'),
-    url('../../font/adelicia-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'harvestregular';
-    src: url('../../font/harvest-webfont.woff2') format('woff2'),
-    url('../../font/harvest-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'elegant_demoregular';
-    src: url('../../font/elegant_demo-webfont.woff2') format('woff2'),
-    url('../../font/elegant_demo-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'samantharegular';
-    src: url('../../font/samantha-webfont.woff2') format('woff2'),
-    url('../../font/samantha-webfont.woff') format('woff');
+    font-family: 'agrandirgrand_heavy';
+    src: url('../../font/agrandir-grandheavy-webfont.woff2') format('woff2'),
+    url('../../font/agrandir-grandheavy-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -56,9 +13,105 @@
 
 
 @font-face {
-    font-family: 'carolineregular';
-    src: url('../../font/caroline-webfont.woff2') format('woff2'),
-    url('../../font/caroline-webfont.woff') format('woff');
+    font-family: 'agrandirgrand_light';
+    src: url('../../font/agrandir-grandlight-webfont.woff2') format('woff2'),
+    url('../../font/agrandir-grandlight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'agrandirnarrow';
+    src: url('../../font/agrandir-narrow-webfont.woff2') format('woff2'),
+    url('../../font/agrandir-narrow-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'agrandirregular';
+    src: url('../../font/agrandir-regular-webfont.woff2') format('woff2'),
+    url('../../font/agrandir-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'agrandirtext_bold';
+    src: url('../../font/agrandir-textbold-webfont.woff2') format('woff2'),
+    url('../../font/agrandir-textbold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'agrandirthin_italic';
+    src: url('../../font/agrandir-thinitalic-webfont.woff2') format('woff2'),
+    url('../../font/agrandir-thinitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'agrandirtight';
+    src: url('../../font/agrandir-tight-webfont.woff2') format('woff2'),
+    url('../../font/agrandir-tight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'agrandirwide_black_italic';
+    src: url('../../font/agrandir-wideblackitalic-webfont.woff2') format('woff2'),
+    url('../../font/agrandir-wideblackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'agrandirwide_light';
+    src: url('../../font/agrandir-widelight-webfont.woff2') format('woff2'),
+    url('../../font/agrandir-widelight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'agrandirregular';
+    src: url('../../font/agrandir-regular-webfont.woff2') format('woff2'),
+    url('../../font/agrandir-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -93,11 +146,16 @@ a:hover{
 ul{
     list-style: none;
 }
-body{
+body {
     background-color: #191B1F;
     color: white;
     overflow-x: hidden;
-} img{
+    background-image: url('../img/background.webp'); /* Remplacez 'votre-image.jpg' par le chemin de votre image */
+    background-size: cover; /* Ajuste l'image pour couvrir tout le corps */
+    background-position: center; /* Centre l'image horizontalement et verticalement */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image de fond */
+}
+ img{
     width: 100%;
 }
 
@@ -166,9 +224,8 @@ p{
     font-size: 1.3rem;
 }
 .sunplay h1{
-    font-family: 'amandaart_design';
-    font-size: 5rem;
-    font-weight: normal;
+    font-family: 'agrandirtext_bold', sans-serif; font-family: 'agrandirtext_bold', sans-serif;    font-size: 5rem;
+    font-weight: bold;
 }
 .sunplay span{
     font-weight: bold;
@@ -884,7 +941,7 @@ body {
     display: none;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1280px) {
    .navigation{
        display: none;
    }
@@ -907,7 +964,30 @@ body {
     .none-connected{
         display: block;
     }
+    body {
+        background-color: #191B1F;
+        color: white;
+        overflow-x: hidden;
+        background-image: url('../img/background_reponsive2.png'); /* Remplacez 'votre-image.jpg' par le chemin de votre image */
+        background-size: cover; /* Ajuste l'image pour couvrir tout le corps */
+        background-position: center; /* Centre l'image horizontalement et verticalement */
+        background-repeat: no-repeat; /* Empêche la répétition de l'image de fond */
+    }
 
+
+
+
+}
+@media screen and (max-width: 880px){
+    body {
+        background-color: #191B1F;
+        color: white;
+        overflow-x: hidden;
+        background-image: url('../img/background-reponsive3.png'); /* Remplacez 'votre-image.jpg' par le chemin de votre image */
+        background-size: cover; /* Ajuste l'image pour couvrir tout le corps */
+        background-position: center; /* Centre l'image horizontalement et verticalement */
+        background-repeat: no-repeat; /* Empêche la répétition de l'image de fond */
+    }
 }
 @media screen and (max-width: 650px){
     .nav {
@@ -928,7 +1008,6 @@ body {
 }
 @media screen and (max-width: 600px) {
     .sunplay h1 {
-        font-family: 'amandaart_design';
         font-size: 4rem;
         font-weight: normal;
     }
@@ -952,13 +1031,11 @@ body {
 
 @media screen and (max-width: 470px) {
     .sunplay h1 {
-        font-family: 'amandaart_design';
         font-size: 3rem;
         font-weight: normal;
     }
     @media screen and (max-width: 380px) {
         .sunplay h1 {
-            font-family: 'amandaart_design';
             font-size: 2.5rem;
             font-weight: normal;
         }
