@@ -150,11 +150,35 @@ body {
     background-color: #191B1F;
     color: white;
     overflow-x: hidden;
-    background-image: url('../img/background.webp'); /* Remplacez 'votre-image.jpg' par le chemin de votre image */
-    background-size: cover; /* Ajuste l'image pour couvrir tout le corps */
-    background-position: center; /* Centre l'image horizontalement et verticalement */
-    background-repeat: no-repeat; /* Empêche la répétition de l'image de fond */
+
 }
+.image-fullscreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent, #191B1F), url('../img/background.webp');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    animation: zoom 30s infinite alternate;
+
+}
+
+/* Keyframes pour l'animation de zoom */
+@keyframes zoom {
+    0% {
+        transform: scale(1); /* Taille initiale */
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.1); /* Zoom de 10% */
+        opacity: 0.7;
+    }
+}
+
  img{
     width: 100%;
 }
@@ -209,6 +233,7 @@ p{
     transform: translateY(0px) translateX(-50%) scale(1);
     opacity: 1;
     z-index: -1;
+
 }
 
 .sunplay {
@@ -968,7 +993,6 @@ body {
         background-color: #191B1F;
         color: white;
         overflow-x: hidden;
-        background-image: url('../img/background_reponsive2.png'); /* Remplacez 'votre-image.jpg' par le chemin de votre image */
         background-size: cover; /* Ajuste l'image pour couvrir tout le corps */
         background-position: center; /* Centre l'image horizontalement et verticalement */
         background-repeat: no-repeat; /* Empêche la répétition de l'image de fond */
@@ -983,7 +1007,6 @@ body {
         background-color: #191B1F;
         color: white;
         overflow-x: hidden;
-        background-image: url('../img/background-reponsive3.png'); /* Remplacez 'votre-image.jpg' par le chemin de votre image */
         background-size: cover; /* Ajuste l'image pour couvrir tout le corps */
         background-position: center; /* Centre l'image horizontalement et verticalement */
         background-repeat: no-repeat; /* Empêche la répétition de l'image de fond */
