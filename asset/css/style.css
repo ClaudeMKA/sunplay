@@ -763,7 +763,7 @@ font-family: "Poppins";
 
 
 .img_job img {
-    width: 90%;
+    width: 70%;
     height: auto;
     margin-bottom: 10px;
     position: absolute;
@@ -1087,4 +1087,11 @@ body {
     font-size: 1rem !important;
     font-weight: 400 !important;
     height: fit-content !important;
+}
+
+.acf-image img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px; /* Ajoute de l'espace au-dessus de chaque image */
+    border-radius: 8px; /* Optionnel: arrondit les coins des images */
 }
